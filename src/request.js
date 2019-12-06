@@ -58,7 +58,7 @@ export default {
       url: baseURL + url,
       data: qs.stringify(data),
       timeout: 30000,
-      withCredentials: true,
+      withCredentials: false,
       headers: {
         "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
       }
