@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "animate.css": "^3.7.0",
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "mint-ui": "^2.2.13",
     "qs": "^6.6.0",
     "vue": "^2.5.21",
