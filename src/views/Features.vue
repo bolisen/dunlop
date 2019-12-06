@@ -97,7 +97,7 @@ export default {
         this.$toast({
           message: "请于12月13日 在酒店现场扫二维码 进行会议签到",
           position: "top",
-          duration: 2000
+          duration: 60000
         });
       } else {
         if (has_sign) {

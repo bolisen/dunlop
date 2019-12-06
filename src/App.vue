@@ -88,4 +88,7 @@ export default {
   background-position: center;
   background-repeat: no-repeat;
 }
+.mint-toast {
+  top: 150px !important;
+}
 </style>
