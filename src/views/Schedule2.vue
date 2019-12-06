@@ -1,14 +1,16 @@
 <template>
   <div class="Schedule2">
-    <div
-      class="schedule2-img"
-      @touchstart="startHandle"
-      @touchmove="prevent"
-      @touchend="endHandel"
-    >
+    <div class="schedule2-img">
+      <div class="to4" @click.stop="goSchedule4"></div>
+      <div
+        class="pull"
+        @touchstart="startHandle"
+        @touchmove="prevent"
+        @touchend="endHandel"
+      ></div>
+
       <img src="../assets/img/schedule2-img1.png" alt="" />
     </div>
-    <div class="to4" @click.stop="goSchedule4"></div>
     <Back />
   </div>
 </template>
@@ -86,10 +88,9 @@ export default {
 .schedule2-img {
   position: relative;
   width: 750px;
-  height: 100%;
 }
 img {
-  width: 100%;
+  width: 750px;
   height: 100%;
 }
 .to4 {
@@ -98,6 +99,13 @@ img {
   height: 70px;
   left: 272px;
   top: 370px;
+  z-index: 200px;
+}
+.pull {
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  bottom: 0px;
   z-index: 200px;
 }
 </style>
