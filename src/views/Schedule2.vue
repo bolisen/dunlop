@@ -5,7 +5,9 @@
       @touchstart="startHandle"
       @touchmove="prevent"
       @touchend="endHandel"
-    ></div>
+    >
+      <img src="../assets/img/schedule2-img1.png" alt="" />
+    </div>
     <div class="to4" @click.stop="goSchedule4"></div>
     <Back />
   </div>
@@ -85,15 +87,17 @@ export default {
   position: relative;
   width: 750px;
   height: 100%;
-  background-image: url("../assets/img/schedule2-img1.png");
-  background-size: 750px 100%;
+}
+img {
+  width: 100%;
+  height: 100%;
 }
 .to4 {
   position: absolute;
   width: 200px;
   height: 70px;
   left: 272px;
-  top: 390px;
+  top: 370px;
   z-index: 200px;
 }
 </style>

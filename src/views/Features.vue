@@ -89,33 +89,33 @@ export default {
       });
     },
     goSchedule() {
-      this.$router.push({
-        name: "Schedule2"
-      });
-      // const has_sign = getLS("depulu_has_sign3");
-      // if (has_sign) {
-      //   this.$router.push({
-      //     name: "Schedule2"
-      //   });
-      // } else {
-      //   window.wx.scanQRCode({
-      //     needResult: 1, // 默认为0，扫描结果由微信处理，1则直接返回扫描结果，
-      //     scanType: ["qrCode", "barCode"], // 可以指定扫二维码还是一维码，默认二者都有
-      //     success: res => {
-      //       if (res.resultStr === "http://dlp.doorder.com/front/#/schedule") {
-      //         this.$router.push({
-      //           name: "Schedule"
-      //         });
-      //       } else {
-      //         this.$toast({
-      //           message: "请扫描正确的二维码",
-      //           position: "top",
-      //           duration: 2000
-      //         });
-      //       }
-      //     }
-      //   });
-      // }
+      // this.$router.push({
+      //   name: "Schedule2"
+      // });
+      const has_sign = getLS("depulu_has_sign3");
+      if (has_sign) {
+        this.$router.push({
+          name: "Schedule2"
+        });
+      } else {
+        window.wx.scanQRCode({
+          needResult: 1, // 默认为0，扫描结果由微信处理，1则直接返回扫描结果，
+          scanType: ["qrCode", "barCode"], // 可以指定扫二维码还是一维码，默认二者都有
+          success: res => {
+            if (res.resultStr === "http://dlp.doorder.com/front/#/schedule") {
+              this.$router.push({
+                name: "Schedule"
+              });
+            } else {
+              this.$toast({
+                message: "请扫描正确的二维码",
+                position: "top",
+                duration: 2000
+              });
+            }
+          }
+        });
+      }
     },
     // judgeDate() {
     //   return new Date().toLocaleDateString() === "2019/1/18";
