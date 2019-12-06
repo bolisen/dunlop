@@ -184,7 +184,6 @@ export default {
   transition: all 1s;
 }
 
-
 /* .cube.show-front {
   transform: translateZ(-100px) rotateY(0deg);
 } */

@@ -2,10 +2,11 @@
   <div class="Schedule2">
     <div
       class="schedule2-img"
-      @touchend="goSchedule3"
+      @touchstart="startHandle"
+      @touchmove="prevent"
+      @touchend="endHandel"
     ></div>
     <div class="to4" @click.stop="goSchedule4"></div>
-
     <Back />
   </div>
 </template>
@@ -16,7 +17,10 @@ import Back from "@/components/Back";
 export default {
   name: "Schedule2",
   data() {
-    return {};
+    return {
+      touchstartY: 0,
+      flag: false
+    };
   },
   computed: {
     ...mapState("app/store", {
@@ -42,6 +46,18 @@ export default {
     ...mapActions({
       changeIsTip: "app/store/changeIsTip"
     }),
+    startHandle(e) {
+      this.touchstartY = e.changedTouches[0].clientY;
+    },
+    endHandel(e) {
+      const touchendY = e.changedTouches[0].clientY;
+      let temp = Math.abs(this.touchstartY - touchendY);
+      if (temp > 20) this.goSchedule3();
+    },
+    prevent(e) {
+      e.preventDefault();
+      e.stopPropagation();
+    },
     goSchedule3() {
       this.$router.push({
         name: "Schedule3"
@@ -68,16 +84,16 @@ export default {
 .schedule2-img {
   position: relative;
   width: 750px;
-  height: 1355px;
+  height: 100%;
   background-image: url("../assets/img/schedule2-img1.png");
-  background-size: 750px 1355px;
+  background-size: 750px 100%;
 }
 .to4 {
   position: absolute;
   width: 200px;
   height: 70px;
   left: 272px;
-  top: 410px;
+  top: 390px;
   z-index: 200px;
 }
 </style>
