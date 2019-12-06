@@ -68,6 +68,8 @@ export default {
 .schedule2-img {
   position: relative;
   width: 750px;
+
+
   height: 1355px;
   background-image: url("../assets/img/schedule2-img1.png");
   background-size: 750px 1355px;
