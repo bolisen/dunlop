@@ -43,16 +43,16 @@ export default {
   },
   mounted() {},
   methods: {
-    /*     judgeDate() {
-          if (
-            new Date().toLocaleDateString() === "2019/1/19" &&
-            new Date().getHours() > 9
-          ) {
-            this.date118 = true;
-          }
-        }, */
+    judgeDate() {
+      if (
+        new Date().toLocaleDateString() === "2019/12/13" &&
+        new Date().getHours() > 9
+      ) {
+        this.date118 = true;
+      }
+    },
     sign() {
-      // if (!this.date118) return;
+      if (!this.date118) return;
       if (!this.name) {
         this.$toast({
           message: "请输入姓名",
@@ -141,5 +141,9 @@ export default {
   margin-top: 375px;
   text-align: center;
   color: #ffffff;
+}
+.schedule-tip1 a {
+  color: #ffffff;
+  text-decoration-line: underline;
 }
 </style>

@@ -8,7 +8,6 @@
         @touchmove="prevent"
         @touchend="endHandel"
       ></div>
-
       <img src="../assets/img/schedule2-img1.png" alt="" />
     </div>
     <Back />
@@ -79,13 +78,13 @@ export default {
 
 <style scoped>
 .Schedule2 {
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
 }
 .schedule2-img {
+  height: 100%;
   position: relative;
   width: 750px;
 }
