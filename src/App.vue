@@ -90,5 +90,6 @@ export default {
 }
 .mint-toast {
   top: 150px !important;
+  font-weight: bold;
 }
 </style>
