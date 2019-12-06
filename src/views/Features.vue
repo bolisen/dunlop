@@ -184,16 +184,6 @@ export default {
   transition: all 1s;
 }
 
-.jiantou {
-  width: 152px;
-  height: 66px;
-  position: absolute;
-  bottom: -130px;
-  left: 50%;
-  margin-left: -76px;
-  background-image: url("../assets/img/jiantou1.png");
-  background-size: 152px 65px;
-}
 
 /* .cube.show-front {
   transform: translateZ(-100px) rotateY(0deg);

@@ -2,7 +2,6 @@
   <div class="Schedule2">
     <div
       class="schedule2-img"
-      @clicks="goSchedule3"
       @touchend="goSchedule3"
     ></div>
     <div class="to4" @click.stop="goSchedule4"></div>
