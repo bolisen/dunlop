@@ -192,18 +192,6 @@ export default {
   transition: all 1s;
 }
 
-/* .cube.show-front {
-  transform: translateZ(-100px) rotateY(0deg);
-} */
-/* .cube.show-right {
-  transform: translateZ(-100px) rotateY(-90deg);
-} */
-/* .cube.show-back {
-  transform: translateZ(-100px) rotateY(-180deg);
-} */
-/* .cube.show-left {
-  transform: translateZ(-100px) rotateY(90deg);
-} */
 .cube.show-front > .cube__face--back,
 .cube.show-front > .cube__face--left,
 .cube.show-right > .cube__face--front,

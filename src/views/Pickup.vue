@@ -2,8 +2,8 @@
   <div class="Pickup">
     <div class="pickup-img">
       <a class="tel1" href="tel:13651777606"></a>
-      <a class="tel2" href="tel:13811410413"></a>
-      <a class="tel3" href="tel:18124289170"></a>
+      <a class="tel2" style="height:0.6rem" href="tel:13811410413"></a>
+      <a class="tel3" style="height:0.6rem" href="tel:18124289170"></a>
       <a class="tel4" href="tel:18801936667"></a>
       <a class="tel5" href="tel:13020241395"></a>
       <a class="tel6" href="tel:18962600508"></a>
@@ -17,8 +17,9 @@
       <a class="tel14" href="tel:13020251395"></a>
       <a class="tel15" href="tel:18801936667"></a>
       <a class="tel16" href="tel:13020251395"></a>
-      <a class="tel17" href="tel:18801936667"></a>
-      <a class="tel18" href="tel:13020251395"></a>
+      <a class="tel17" href="tel:15001903934"></a>
+      <a class="tel18" href="tel:18801936667"></a>
+      <a class="tel19" href="tel:13020251395"></a>
     </div>
     <Back />
   </div>
@@ -60,11 +61,11 @@ export default {
   /* background-color: rgba(0, 0, 0, 0.6); */
 }
 .tel1 {
-  top: 400px;
+  top: 390px;
   right: 100px;
 }
 .tel2 {
-  top: 446px;
+  top: 430px;
   right: 100px;
 }
 .tel3 {
@@ -129,6 +130,10 @@ export default {
 }
 .tel18 {
   bottom: 320px;
+  right: 100px;
+}
+.tel19 {
+  bottom: 290px;
   right: 100px;
 }
 </style>
