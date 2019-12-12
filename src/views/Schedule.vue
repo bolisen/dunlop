@@ -52,7 +52,7 @@ export default {
       }
     },
     sign() {
-      // if (!this.date118) return;
+      //if (!this.date118) return;
       if (!this.name) {
         this.$toast({
           message: "请输入姓名",
