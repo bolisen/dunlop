@@ -17,7 +17,6 @@
       <a class="tel14" href="tel:13020251395"></a>
       <a class="tel15" href="tel:18801936667"></a>
       <a class="tel16" href="tel:13020251395"></a>
-      <a class="tel17" href="tel:15001903934"></a>
       <a class="tel18" href="tel:18801936667"></a>
       <a class="tel19" href="tel:13020251395"></a>
     </div>
