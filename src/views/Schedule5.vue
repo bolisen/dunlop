@@ -37,7 +37,7 @@ export default {
     },
     goSchedule3() {
       this.$router.push({
-        name: "Schedule5"
+        name: "Schedule6"
       });
     },
     preview() {

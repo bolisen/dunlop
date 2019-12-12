@@ -1,10 +1,5 @@
 <template>
-  <div
-    class="Schedule3"
-    @touchstart="startHandle"
-    @touchmove="prevent"
-    @touchend="endHandel"
-  >
+  <div class="Schedule3">
     <div class="schedule3-img" @click="preview"></div>
     <Back />
   </div>
@@ -23,23 +18,6 @@ export default {
   created() {},
   mounted() {},
   methods: {
-    startHandle(e) {
-      this.touchstartY = e.changedTouches[0].clientY;
-    },
-    endHandel(e) {
-      const touchendY = e.changedTouches[0].clientY;
-      let temp = Math.abs(this.touchstartY - touchendY);
-      if (temp > 20) this.goSchedule3();
-    },
-    prevent(e) {
-      e.preventDefault();
-      e.stopPropagation();
-    },
-    goSchedule3() {
-      this.$router.push({
-        name: "Schedule5"
-      });
-    },
     preview() {
       window.wx.previewImage({
         current: "http://dlp.doorder.com/front/sign_name.png", // 当前显示图片的http链接

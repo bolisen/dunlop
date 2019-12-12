@@ -48,6 +48,20 @@ export default new Router({
         import(/* webpackChunkName: "schedule4" */ "./views/Schedule4.vue")
     },
     {
+      path: "/schedule5",
+      name: "Schedule5",
+      meta: { title: "2020年度邓禄普轮胎代理商会议" },
+      component: () =>
+        import(/* webpackChunkName: "schedule4" */ "./views/Schedule5.vue")
+    },
+    {
+      path: "/schedule6",
+      name: "Schedule6",
+      meta: { title: "2020年度邓禄普轮胎代理商会议" },
+      component: () =>
+        import(/* webpackChunkName: "schedule4" */ "./views/Schedule6.vue")
+    },
+    {
       path: "/tips",
       name: "Tips",
       meta: { title: "2020年度邓禄普轮胎代理商会议" },
