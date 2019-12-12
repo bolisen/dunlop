@@ -18,7 +18,7 @@ export default {
   data() {
     return {
       list: [],
-      imgList:[]
+      imgList: []
     };
   },
   components: {
@@ -44,7 +44,7 @@ export default {
     preview(img) {
       window.wx.previewImage({
         current: img, // 当前显示图片的http链接
-        urls: [this.imgList] // 需要预览的图片http链接列表
+        urls: this.imgList // 需要预览的图片http链接列表
       });
     }
   },
