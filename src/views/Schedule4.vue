@@ -3,7 +3,11 @@
     <div class="schedule2-img">
       <div>
         <div class="box" v-for="(item, index) in list" :key="index">
-          <img :src="'http://dlp.doorder.com' + item.img" alt="" @click="preview('http://dlp.doorder.com' + item.img)"/>
+          <img
+            :src="'http://dlp.doorder.com' + item.img"
+            alt=""
+            @click="preview('http://dlp.doorder.com' + item.img)"
+          />
         </div>
       </div>
     </div>
@@ -31,8 +35,8 @@ export default {
         .post("/index/sign/listImg")
         .then(res => {
           this.list = res.data;
-          for(let i = 0;i<this.list.length;i++){
-            let imgStr ='http://dlp.doorder.com'+ this.list[i].img;
+          for (let i = 0; i < this.list.length; i++) {
+            let imgStr = "http://dlp.doorder.com" + this.list[i].img;
             this.imgList.push(imgStr);
           }
           console.log(this.imgList);
