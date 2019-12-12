@@ -20,7 +20,7 @@ axios.interceptors.request.use(
 axios.interceptors.response.use(
   response => {
     // Do something with response data
-    if (response.data.code !== 1) {
+    if (response.data.code !== 1 && response.data.code !== 200) {
       Vue.$toast({
         message: response.data.msg,
         position: "top",
