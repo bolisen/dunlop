@@ -8,7 +8,7 @@
         @touchmove="prevent"
         @touchend="endHandel"
       ></div>
-      <img src="../assets/img/schedule2-img1.png" alt="" />
+      <img src="../assets/img/schedule2-img11.png" alt="" />
     </div>
     <Back />
   </div>
@@ -62,9 +62,14 @@ export default {
       e.stopPropagation();
     },
     goSchedule3() {
-      this.$router.push({
-        name: "Schedule3"
+      this.$toast({
+        message: "座位表将于12月14日更新",
+        position: "middle", // 'top' 'bottom' 'middle' 默认： middle
+        duration: 2000
       });
+      /*this.$router.push({
+        name: "Schedule3"
+      });*/
     },
     goSchedule4() {
       this.$router.push({
