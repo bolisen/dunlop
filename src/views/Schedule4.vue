@@ -56,16 +56,19 @@ export default {
   background-size: 750px 1355px;
 }
 .schedule2-img > div {
-  margin: 300px auto 0;
+  margin: 400px auto 0;
 }
 .box {
   float: left;
   width: 50%;
   height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 30px;
 }
 .box img {
-  margin: 0 atuo;
-  width: 300px;
+  width: 250px;
   height: 100%;
   border-radius: 10px;
   border: 2px solid ffd801;
