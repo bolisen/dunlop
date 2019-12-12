@@ -14,8 +14,8 @@
       <div class="schedule-tip1 f16" v-show="isFaile">
         <p>签到失败</p>
         <p>请核查您的姓名</p>
-        <p>或者联系会务组李晓丽</p>
-        <p><a href="tel:13564671412">13564671412</a></p>
+        <p>或者联系会务组邓益</p>
+        <p><a href="tel:13776206018">13776206018</a></p>
       </div>
     </div>
     <Back />
