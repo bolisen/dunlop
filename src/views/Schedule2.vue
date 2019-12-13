@@ -8,7 +8,7 @@
         @touchmove="prevent"
         @touchend="endHandel"
       ></div>
-      <img src="../assets/img/schedule2-img11.png" alt="" />
+      <img src="../assets/img/schedule2-img1.png" alt="" />
     </div>
     <Back />
   </div>
