@@ -93,13 +93,6 @@ export default {
       //   name: "Schedule2"
       // });
       const has_sign = getLS("depulu_has_sign3");
-      if (!this.judgeDate()) {
-        this.$toast({
-          message: "请于12月13日 在酒店现场扫二维码 进行会议签到",
-          position: "top",
-          duration: 2000
-        });
-      } else {
         if (has_sign) {
           this.$router.push({
             name: "Schedule2"
@@ -123,7 +116,6 @@ export default {
             }
           });
         }
-      }
     },
     judgeDate() {
       return new Date().toLocaleDateString() === "2019/12/13";
