@@ -62,14 +62,14 @@ export default {
       e.stopPropagation();
     },
     goSchedule3() {
-      this.$toast({
+      /*this.$toast({
         message: "座位表将于12月14日更新",
         position: "middle", // 'top' 'bottom' 'middle' 默认： middle
         duration: 2000
-      });
-      /*this.$router.push({
-        name: "Schedule3"
       });*/
+      this.$router.push({
+        name: "Schedule3"
+      });
     },
     goSchedule4() {
       this.$router.push({
