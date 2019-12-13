@@ -1,7 +1,7 @@
 <template>
   <div class="Schedule2">
     <div class="schedule2-img">
-      <!-- <div class="to4" @click.stop="goSchedule4"></div> -->
+       <div class="to4" @click.stop="goSchedule4"></div>
       <div
         class="pull"
         @touchstart="startHandle"
