@@ -29,21 +29,26 @@ export default {
     endHandel(e) {
       const touchendY = e.changedTouches[0].clientY;
       let temp = Math.abs(this.touchstartY - touchendY);
-      if (temp > 20) this.goSchedule3();
+      if (temp > 20) this.goSchedule5();
     },
     prevent(e) {
       e.preventDefault();
       e.stopPropagation();
     },
-    goSchedule3() {
+    goSchedule5() {
       this.$router.push({
         name: "Schedule5"
       });
     },
+    goSchedule6() {
+      this.$router.push({
+        name: "Schedule6"
+      });
+    },
     preview() {
       window.wx.previewImage({
-        current: "http://dlp.doorder.com/front/sign_name3.png", // 当前显示图片的http链接
-        urls: ["http://dlp.doorder.com/front/sign_name3.png"] // 需要预览的图片http链接列表
+        current: "http://dlp.doorder.com/front/clear1.png", // 当前显示图片的http链接
+        urls: ["http://dlp.doorder.com/front/clear1.png"] // 需要预览的图片http链接列表
       });
     }
   },
@@ -58,7 +63,7 @@ export default {
 .schedule3-img {
   width: 750px;
   height: 1355px;
-  background-image: url("../assets/img/schedule3-img1.png");
+  background-image: url("../assets/img/meet1.png");
   background-size: 750px 1355px;
 }
 </style>
