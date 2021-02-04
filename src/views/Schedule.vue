@@ -1,6 +1,7 @@
 <template>
   <div class="Schedule">
     <div class="schedule-img">
+      <p class="schedule-time f12">签到时间： 3月3日</p>
       <div class="schedule-form f18">
         <div class="form-input">
           <input type="text" v-model.trim="name" placeholder="姓名" />
@@ -100,7 +101,7 @@ export default {
   background-size: 750px 1180px;
 }
 .schedule-form {
-  padding-top: 345px;
+  padding-top: 50px;
 }
 .form-input {
   margin: 0 auto 38px;
@@ -138,12 +139,17 @@ export default {
   color: #ffffff;
 }
 .schedule-tip1 {
-  margin-top: 375px;
+  margin-top: 150px;
   text-align: center;
   color: #ffffff;
 }
 .schedule-tip1 a {
   color: #ffffff;
   text-decoration-line: underline;
+}
+.schedule-time {
+  margin: 345px auto 0;
+  text-align: center;
+  color: #fff;
 }
 </style>

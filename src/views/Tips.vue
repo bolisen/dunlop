@@ -1,10 +1,10 @@
 <template>
   <div class="Tips">
     <div class="tips-img">
-      <a class="tel1" href="tel:13776206018"></a>
-      <a class="tel2" href="tel:13020251395"></a>
-      <a class="tel3" href="tel:13564671412"></a>
-      <a class="tel4" href="tel:13818839650"></a>
+<!--      <a class="tel1" href="tel:13776206018"></a>-->
+<!--      <a class="tel2" href="tel:13020251395"></a>-->
+<!--      <a class="tel3" href="tel:13564671412"></a>-->
+<!--      <a class="tel4" href="tel:13818839650"></a>-->
     </div>
     <Back />
   </div>
@@ -30,15 +30,15 @@ export default {
 <style scoped>
 .Tips {
   height: 100%;
-  display: flex;
+  /*display: flex;*/
   align-items: center;
   justify-content: center;
 }
 .tips-img {
   width: 750px;
-  height: 1180px;
+  height: 2214px;
   background-image: url("../assets/img/tips_img1.png");
-  background-size: 750px 1180px;
+  background-size: 750px 2214px;
   position: relative;
 }
 .tips-img > a {

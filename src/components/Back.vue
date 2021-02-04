@@ -37,5 +37,6 @@ export default {
   width: 80px;
   height: 80px;
   display: block;
+  filter: invert(100);
 }
 </style>
