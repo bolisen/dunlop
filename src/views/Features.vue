@@ -169,15 +169,15 @@ export default {
 }
 .scene {
   position: relative;
-  width: 352px;
-  height: 332px;
+  width: 393px;
+  height: 356px;
   perspective: 800px;
   /* perspective-origin: 80% 0%; */
 }
 
 .cube {
-  width: 352px;
-  height: 332px;
+  width: 393px;
+  height: 356px;
   position: relative;
   transform-style: preserve-3d;
   transform: translateZ(-100px);
@@ -203,8 +203,8 @@ export default {
 
 .cube__face {
   position: absolute;
-  width: 352px;
-  height: 332px;
+  width: 393px;
+  height: 356px;
   font-weight: bold;
   color: white;
   text-align: center;
@@ -212,22 +212,22 @@ export default {
 
 .cube__face--front {
   background-image: url("../assets/img/tips1.png");
-  background-size: 339px 327px;
-  transform: rotateY(0deg) translateZ(176px);
+  background-size: 393px 356px;
+  transform: rotateY(0deg) translateZ(180px);
 }
 .cube__face--right {
   background-image: url("../assets/img/pickup1.png");
-  background-size: 346px 332px;
-  transform: rotateY(90deg) translateZ(176px);
+  background-size: 393px 356px;
+  transform: rotateY(90deg) translateZ(180px);
 }
 .cube__face--back {
   background-image: url("../assets/img/schedule1.png");
-  background-size: 346px 332px;
-  transform: rotateY(180deg) translateZ(176px);
+  background-size: 393px 356px;
+  transform: rotateY(180deg) translateZ(180px);
 }
 .cube__face--left {
   background-image: url("../assets/img/around1.png");
-  background-size: 351px 328px;
-  transform: rotateY(-90deg) translateZ(176px);
+  background-size: 393px 356px;
+  transform: rotateY(-90deg) translateZ(180px);
 }
 </style>

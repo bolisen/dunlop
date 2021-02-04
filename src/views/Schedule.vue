@@ -10,9 +10,9 @@
       <!--  <div class="schedule-btn" :class="{ act: date118 }" @click="sign">
         签到
       </div> -->
-      <div class="schedule-btn" @click="sign">签到</div>
+      <div class="schedule-btn f18" @click="sign">签到</div>
       <p class="schedule-tip f12">*请填写姓名，以便查看会议安排</p>
-      <div class="schedule-tip1 f16" v-show="isFaile">
+      <div class="schedule-tip1 f18" v-show="isFaile">
         <p>签到失败</p>
         <p>请核查您的姓名</p>
         <p>或者联系会务组邓益</p>
@@ -33,7 +33,7 @@ export default {
       name: "",
       date118: false,
       loading: false,
-      isFaile: false
+      isFaile: true
     };
   },
   components: {
@@ -96,9 +96,9 @@ export default {
 }
 .schedule-img {
   width: 750px;
-  height: 1180px;
+  height: 1500px;
   background-image: url("../assets/img/schedule-img1.png");
-  background-size: 750px 1180px;
+  background-size: 750px 1500px;
 }
 .schedule-form {
   padding-top: 50px;
@@ -112,8 +112,8 @@ export default {
 .form-input > input {
   box-sizing: border-box;
   width: 100%;
-  height: 77px;
-  line-height: 77px;
+  height: 80px;
+  line-height: 80px;
   padding-left: 10px;
   background-color: #ffffff;
   color: #333333;
@@ -122,12 +122,12 @@ export default {
   color: #a4a4a4;
 }
 .schedule-btn {
-  margin: 0 auto 26px;
+  margin: 0 auto 28px;
   width: 394px;
-  height: 77px;
-  line-height: 77px;
+  height: 80px;
+  line-height: 80px;
   text-align: center;
-  color: #ffffff;
+  color: #000;
   background-color: #fee100;
 }
 .schedule-btn.act {
@@ -137,18 +137,22 @@ export default {
   width: 394px;
   margin: 0 auto;
   color: #ffffff;
+  text-align: center;
 }
 .schedule-tip1 {
   margin-top: 150px;
   text-align: center;
   color: #ffffff;
 }
+.schedule-tip1 p {
+  margin-bottom: 10px;
+}
 .schedule-tip1 a {
   color: #ffffff;
   text-decoration-line: underline;
 }
 .schedule-time {
-  margin: 345px auto 0;
+  margin: 453px auto 0;
   text-align: center;
   color: #fff;
 }
