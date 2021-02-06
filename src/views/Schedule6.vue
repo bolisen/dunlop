@@ -20,8 +20,8 @@ export default {
   methods: {
     preview() {
       window.wx.previewImage({
-        current: "http://pa-api.jiaxinxinyu.com/front/clear3.png", // 当前显示图片的http链接
-        urls: ["http://pa-api.jiaxinxinyu.com/front/clear3.png"] // 需要预览的图片http链接列表
+        current: "http://pa-api.jiaxinxinyu.com/clear3.png", // 当前显示图片的http链接
+        urls: ["http://pa-api.jiaxinxinyu.com/clear3.png"] // 需要预览的图片http链接列表
       });
     }
   },
