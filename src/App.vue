@@ -25,7 +25,7 @@ export default {
     registerWX() {
       const url = window.location.href.split("#")[0];
       this.$http
-        .post("/index/sign/getAppInfo", { url })
+        .post("/index/index/getJssdk", { url })
         .then(res => {
           console.log(res);
           window.wx.config({
@@ -45,8 +45,8 @@ export default {
             console.log("ready");
             const options = {
               title: "邓禄普代理商会议",
-              link: `${window.location.origin}/front`,
-              imgUrl: `${window.location.origin}/front/share.jpeg`,
+              link: `${window.location.origin}`,
+              imgUrl: `${window.location.origin}/share.jpeg`,
               desc: "2020年度邓禄普轮胎代理商会议欢迎您莅临",
               success: res => {
                 console.log(res);

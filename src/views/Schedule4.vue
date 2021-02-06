@@ -4,9 +4,9 @@
       <div>
         <div class="box" v-for="(item, index) in list" :key="index">
           <img
-            :src="'http://dlp.doorder.com' + item.img"
+            :src="'http://pa-api.jiaxinxinyu.com' + item.img"
             alt=""
-            @click="preview('http://dlp.doorder.com' + item.img)"
+            @click="preview('http://pa-api.jiaxinxinyu.com' + item.img)"
           />
         </div>
       </div>
@@ -36,7 +36,7 @@ export default {
         .then(res => {
           this.list = res.data;
           for (let i = 0; i < this.list.length; i++) {
-            let imgStr = "http://dlp.doorder.com" + this.list[i].img;
+            let imgStr = "http://pa-api.jiaxinxinyu.com" + this.list[i].img;
             this.imgList.push(imgStr);
           }
           console.log(this.imgList);

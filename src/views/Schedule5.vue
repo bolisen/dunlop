@@ -37,8 +37,8 @@ export default {
     },
     preview() {
       window.wx.previewImage({
-        current: "http://dlp.doorder.com/front/clear2.png", // 当前显示图片的http链接
-        urls: ["http://dlp.doorder.com/front/clear2.png"] // 需要预览的图片http链接列表
+        current: "http://pa-api.jiaxinxinyu.com/front/clear2.png", // 当前显示图片的http链接
+        urls: ["http://pa-api.jiaxinxinyu.com/front/clear2.png"] // 需要预览的图片http链接列表
       });
     }
   },
