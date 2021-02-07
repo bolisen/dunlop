@@ -47,7 +47,7 @@ export default {
               title: "邓禄普代理商会议",
               link: `${window.location.origin}`,
               imgUrl: `${window.location.origin}/share.jpeg`,
-              desc: "2020年度邓禄普轮胎代理商会议欢迎您莅临",
+              desc: "2021年度邓禄普轮胎代理商会议欢迎您莅临",
               success: res => {
                 console.log(res);
               },
