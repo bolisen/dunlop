@@ -1,7 +1,7 @@
 <template>
   <div class="Schedule3">
     <div class="schedule3-img" @click="preview">
-    <!--  <div class="box" style="left:0" @click.stop="goSchedule5"></div>
+    <!--<div class="box" style="left:0" @click.stop="goSchedule5"></div>
       <div class="box" style="right:0" @click.stop="goSchedule6"></div>-->
     </div>
     <Back />

@@ -84,7 +84,7 @@ export default {
   height: 100%;
   overflow-y: auto;
   background-image: url("./assets/img/bg1.png");
-  background-size: 750px 100%;
+  background-size: 750px 1500px;
   background-position: center;
   background-repeat: no-repeat;
 }
