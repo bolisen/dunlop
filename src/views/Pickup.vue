@@ -1,7 +1,8 @@
 <template>
   <div class="Pickup">
-    <div class="pickup-img">
-      <a class="tel1" href="tel:13651777606"></a>
+  <div class="pickup-img">
+    <img src="" alt="">
+      <!--<a class="tel1" href="tel:13651777606"></a>
       <a class="tel2" style="height:0.6rem" href="tel:13811410413"></a>
       <a class="tel3" style="height:0.6rem" href="tel:18124289170"></a>
       <a class="tel4" href="tel:18801936667"></a>
@@ -18,7 +19,7 @@
       <a class="tel15" href="tel:18801936667"></a>
       <a class="tel16" href="tel:13020251395"></a>
       <a class="tel18" href="tel:18801936667"></a>
-      <a class="tel19" href="tel:13020251395"></a>
+      <a class="tel19" href="tel:13020251395"></a>-->
     </div>
     <Back />
   </div>
