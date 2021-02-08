@@ -32,7 +32,7 @@ export default {
 }
 .home-img {
   width: 750px;
-  height: 1500px;
+  height: 100%;
   background-image: url("../assets/img/index1.png");
   background-size: 750px 1500px;
   background-position: center;

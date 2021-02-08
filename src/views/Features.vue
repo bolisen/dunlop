@@ -150,11 +150,12 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .features-img {
   width: 750px;
-  height: 1500px;
+  height: 100%;
   background-image: url("../assets/img/features1.png");
   background-size: 750px 1500px;
   z-index: 10;
