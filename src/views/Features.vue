@@ -118,7 +118,7 @@ export default {
         }
     },
     judgeDate() {
-      return new Date().toLocaleDateString() === "2019/12/13";
+      return new Date().toLocaleDateString() === "2021/3/3";
     },
     goTips() {
       this.$router.push({
