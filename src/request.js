@@ -69,7 +69,7 @@ export default {
       method: "post",
       url: baseURL + url,
       data: formdata,
-      withCredentials: true,
+      withCredentials: false,
       timeout: 30000
     });
   }
