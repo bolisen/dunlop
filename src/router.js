@@ -82,6 +82,13 @@ export default new Router({
         import(/* webpackChunkName: "around" */ "./views/Around.vue")
     },
     {
+      path: "/upload",
+      name: "Upload",
+      meta: { title: "上传" },
+      component: () =>
+        import(/* webpackChunkName: "around" */ "./views/Upload.vue")
+    },
+    {
       path: "/test",
       name: "Test",
       meta: { title: "2021年度邓禄普轮胎代理商会议" },
