@@ -44,7 +44,7 @@ export default {
             // alert('ready')
             console.log("ready");
             const options = {
-              title: "邓禄普代理商会议",
+              title: "邓禄普轮胎代理商会议",
               link: `${window.location.origin}`,
               imgUrl: `${window.location.origin}/share.jpg`,
               desc: "2021年度邓禄普轮胎代理商会议欢迎您莅临",

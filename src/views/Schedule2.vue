@@ -100,7 +100,7 @@ img {
 .to4 {
   position: absolute;
   width: 200px;
-  height: 70px;
+  height:200px;
   left: 272px;
   top: 370px;
   z-index: 200px;

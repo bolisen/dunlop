@@ -33,7 +33,7 @@ export default {
       name: "",
       date118: false,
       loading: false,
-      isFaile: true
+      isFaile: false
     };
   },
   components: {
@@ -71,7 +71,7 @@ export default {
         .then(res => {
           console.log(res);
           setLS("depulu_has_sign3", 1);
-          this.isFaile = false;
+          this.isFaile = true;
           this.loading = false;
           this.$router.replace({
             name: "Schedule2"
