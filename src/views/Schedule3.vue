@@ -1,13 +1,16 @@
 <template>
   <div class="Schedule3">
-    <div class="schedule3-img" @click="preview">
-      <div
-              class="pull"
-              @touchstart="startHandle"
-              @touchmove="prevent"
-              @touchend="endHandel"
-      ></div>
+    <div class="schedule3-img"
+         @click="preview"
+         @touchstart="startHandle"
+         @touchmove="prevent"
+         @touchend="endHandel"
+    >
+      <img src="../assets/img/meet4.png" class="schedule3-bgimg">
     <!--<div class="box" style="left:0" @click.stop="goSchedule5"></div>-->
+    </div>
+    <div>
+      <img src="../assets/img/top.png" class="top-img">
     </div>
     <Back />
   </div>
@@ -49,7 +52,6 @@ export default {
       });
     },
     preview() {
-      console.log(2);
       window.wx.previewImage({
         current: "http://pa-api.jiaxinxinyu.com/clear4.png", // 当前显示图片的http链接
         urls: ["http://pa-api.jiaxinxinyu.com/clear4.png"] // 需要预览的图片http链接列表
@@ -67,14 +69,27 @@ export default {
 .schedule3-img {
   position: relative;
   width: 750px;
-  height: 1355px;
-  background-image: url("../assets/img/meet4.png");
-  background-size: 750px 1355px;
+  height: 1366px;
+  /*background-image: url("../assets/img/meet4.png");
+  background-size: 428px 904px*/
+}
+.schedule3-bgimg {
+  width: 75%;
+  height: 75%;
+  padding-left:75px;
+  padding-top: 80px;
 }
 .box {
   position: absolute;
   bottom: 0;
   width: 50vw;
   height: 100px;
+}
+.top-img {
+  width: 50%;
+  height: 50%;
+  position: relative;
+  left: 150px;
+  bottom: 250px;
 }
 </style>

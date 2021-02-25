@@ -5,7 +5,9 @@
     @touchmove="prevent"
     @touchend="endHandel"
   >
-    <div class="schedule3-img" @click="preview"></div>
+    <div class="schedule3-img" @click="preview">
+      <img src="../assets/img/meet4.png" class="schedule3-bgimg">
+    </div>
     <Back />
   </div>
 </template>
@@ -53,7 +55,11 @@ export default {
 .schedule3-img {
   width: 750px;
   height: 1355px;
-  background-image: url("../assets/img/meet2.png");
-  background-size: 750px 1355px;
+}
+.schedule3-bgimg {
+  width: 80%;
+  height: 80%;
+  padding-left:65px;
+  padding-top: 80px;
 }
 </style>
