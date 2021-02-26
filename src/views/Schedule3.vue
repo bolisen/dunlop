@@ -53,8 +53,8 @@ export default {
     },
     preview() {
       window.wx.previewImage({
-        current: "http://pa-api.jiaxinxinyu.com/clear4.png", // 当前显示图片的http链接
-        urls: ["http://pa-api.jiaxinxinyu.com/clear4.png"] // 需要预览的图片http链接列表
+        current: "http://pa-api.jiaxinxinyu.com/meet4.png", // 当前显示图片的http链接
+        urls: ["http://pa-api.jiaxinxinyu.com/meet4.png"] // 需要预览的图片http链接列表
       });
     }
   },
@@ -86,10 +86,10 @@ export default {
   height: 100px;
 }
 .top-img {
-  width: 50%;
-  height: 50%;
+  width: 40%;
+  height: 40%;
   position: relative;
-  left: 150px;
-  bottom: 250px;
+  left: 200px;
+  bottom: 230px;
 }
 </style>
